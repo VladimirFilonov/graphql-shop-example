@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     # Project apps
     'catalog',
+    'catalog_queue',
 
 ]
 
@@ -140,3 +141,8 @@ RQ_QUEUES = {
     }
 }
 
+REDIS_QUEUE = {
+    'host': 'localhost',
+    'port': 6379,
+    'db': 0
+}
